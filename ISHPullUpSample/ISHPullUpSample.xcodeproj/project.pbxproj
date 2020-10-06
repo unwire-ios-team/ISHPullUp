@@ -3,14 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		DC2B58311D2551DD008D810A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B58301D2551DD008D810A /* WebViewController.swift */; };
 		DC3CA4B61D21CE260011C95E /* ContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3CA4B51D21CE260011C95E /* ContentVC.swift */; };
-		DC8EFBAD1D228A56008D0FE7 /* ISHPullUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEC1A141D1EEB530080B69A /* ISHPullUp.framework */; };
-		DC8EFBB01D228A9C008D0FE7 /* ISHPullUp.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCEC1A141D1EEB530080B69A /* ISHPullUp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DCC019881D212AEC0035D5A8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC019871D212AEC0035D5A8 /* MapKit.framework */; };
 		DCEC19F01D1EEB3F0080B69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC19EF1D1EEB3F0080B69A /* AppDelegate.swift */; };
 		DCEC19F21D1EEB3F0080B69A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC19F11D1EEB3F0080B69A /* ViewController.swift */; };
@@ -19,6 +17,7 @@
 		DCEC19FA1D1EEB3F0080B69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEC19F81D1EEB3F0080B69A /* LaunchScreen.storyboard */; };
 		DCEC1A051D1EEB3F0080B69A /* ISHPullUpSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC1A041D1EEB3F0080B69A /* ISHPullUpSampleUITests.swift */; };
 		DCEC1A201D1F31A30080B69A /* BottomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC1A1E1D1F31A30080B69A /* BottomVC.swift */; };
+		E40237FB252C9AA800CF1EF8 /* ISHPullUp in Frameworks */ = {isa = PBXBuildFile; productRef = E40237FA252C9AA800CF1EF8 /* ISHPullUp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +28,6 @@
 			remoteGlobalIDString = DCEC19EB1D1EEB3F0080B69A;
 			remoteInfo = ISHPullUpSample;
 		};
-		DCEC1A131D1EEB530080B69A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DCEC1A0F1D1EEB520080B69A /* ISHPullUp.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DCEC19D81D1EEB0D0080B69A;
-			remoteInfo = ISHPullUp;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,7 +37,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DC8EFBB01D228A9C008D0FE7 /* ISHPullUp.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,9 +56,9 @@
 		DCEC1A001D1EEB3F0080B69A /* ISHPullUpSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISHPullUpSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEC1A041D1EEB3F0080B69A /* ISHPullUpSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISHPullUpSampleUITests.swift; sourceTree = "<group>"; };
 		DCEC1A061D1EEB3F0080B69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCEC1A0F1D1EEB520080B69A /* ISHPullUp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ISHPullUp.xcodeproj; path = ../ISHPullUp.xcodeproj; sourceTree = "<group>"; };
 		DCEC1A1A1D1EEBF20080B69A /* ISHPullUpSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ISHPullUpSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		DCEC1A1E1D1F31A30080B69A /* BottomVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomVC.swift; sourceTree = "<group>"; };
+		E40237F9252C9A9B00CF1EF8 /* ISHPullUp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ISHPullUp; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC8EFBAD1D228A56008D0FE7 /* ISHPullUp.framework in Frameworks */,
 				DCC019881D212AEC0035D5A8 /* MapKit.framework in Frameworks */,
+				E40237FB252C9AA800CF1EF8 /* ISHPullUp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +84,7 @@
 		DCC019861D212AEC0035D5A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E40237F9252C9A9B00CF1EF8 /* ISHPullUp */,
 				DCC019871D212AEC0035D5A8 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -101,7 +93,6 @@
 		DCEC19E31D1EEB3F0080B69A = {
 			isa = PBXGroup;
 			children = (
-				DCEC1A0F1D1EEB520080B69A /* ISHPullUp.xcodeproj */,
 				DCEC19EE1D1EEB3F0080B69A /* ISHPullUpSample */,
 				DCEC1A031D1EEB3F0080B69A /* ISHPullUpSampleUITests */,
 				DCEC19ED1D1EEB3F0080B69A /* Products */,
@@ -144,14 +135,6 @@
 			path = ISHPullUpSampleUITests;
 			sourceTree = "<group>";
 		};
-		DCEC1A101D1EEB520080B69A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DCEC1A141D1EEB530080B69A /* ISHPullUp.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +152,9 @@
 			dependencies = (
 			);
 			name = ISHPullUpSample;
+			packageProductDependencies = (
+				E40237FA252C9AA800CF1EF8 /* ISHPullUp */,
+			);
 			productName = ISHPullUpSample;
 			productReference = DCEC19EC1D1EEB3F0080B69A /* ISHPullUpSample.app */;
 			productType = "com.apple.product-type.application";
@@ -233,12 +219,6 @@
 			mainGroup = DCEC19E31D1EEB3F0080B69A;
 			productRefGroup = DCEC19ED1D1EEB3F0080B69A /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = DCEC1A101D1EEB520080B69A /* Products */;
-					ProjectRef = DCEC1A0F1D1EEB520080B69A /* ISHPullUp.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				DCEC19EB1D1EEB3F0080B69A /* ISHPullUpSample */,
@@ -246,16 +226,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		DCEC1A141D1EEB530080B69A /* ISHPullUp.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ISHPullUp.framework;
-			remoteRef = DCEC1A131D1EEB530080B69A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DCEC19EA1D1EEB3F0080B69A /* Resources */ = {
@@ -433,7 +403,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -445,7 +416,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ISHPullUpSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.iosphere.pullupsample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ISHPullUpSample/ISHPullUpSample-Bridging-Header.h";
@@ -460,7 +434,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ISHPullUpSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.iosphere.pullupsample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ISHPullUpSample/ISHPullUpSample-Bridging-Header.h";
@@ -472,7 +449,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = ISHPullUpSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.iosphere.ISHPullUpSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = ISHPullUpSample;
@@ -483,7 +464,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = ISHPullUpSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.iosphere.ISHPullUpSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = ISHPullUpSample;
@@ -521,6 +506,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E40237FA252C9AA800CF1EF8 /* ISHPullUp */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ISHPullUp;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCEC19E41D1EEB3F0080B69A /* Project object */;
 }

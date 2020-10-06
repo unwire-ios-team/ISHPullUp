@@ -1,5 +1,9 @@
 # <img src="icon.png" align="center" width="60" height="60"> Changelog
 
+## 1.0.8
+
+* Adds Swift Package Manager support.
+
 ## 1.0.7
 
 * Fix minor warnings in Xcode 9.2 and 9.3
